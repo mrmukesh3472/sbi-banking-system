@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/common.js" defer></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Signup JS -->
+    <script src="js/signup.js"></script>
+</head>
+<body class="signup-page">
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="images/sbi-logo.png" alt="SBI Logo">
+            <span>State Bank Of India</span>
+        </div>
+        
+        <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu" id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="login.html">LogIn</a>
+            <a class="active" href="signup.html">SignUp</a>
+            <a href="contact.html">ContactUs</a>
+        </div>
+    </div>
+
+    <!-- ===== SIGNUP SECTION ===== -->
+    <div class="signup-section">
+        <div class="signup-box">
+            <h2>SIGN UP</h2>
+
+            <!-- Servlet URL -->
+            <form action="signup" method="post">
+                <label>USERNAME</label>
+                <input type="text" name="username" required>
+
+                <label>CREATE PASSWORD</label>
+                <input type="password" name="password" required>
+
+                <label>EMAIL</label>
+                <input type="email" name="email" required>
+
+                <label>CONTACT NO.</label>
+                <input type="text" name="contact" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+    </div>
+
+</body>
+</html>

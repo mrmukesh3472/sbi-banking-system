@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admindashboard.css">
+    <script src="js/admin-dashboard.js"></script>
+    
+    <!-- COMMON JS -->
+    <script defer src="js/admin-common.js"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Logout Confirmation -->
+	<script src="js/logout-confirm.js"></script>
+</head>
+
+<body class="dashboard-page">
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+    <div class="logo-area">
+        <img src="images/sbi-logo.png">
+        <span>State Bank Of India</span>
+    </div>
+    
+    <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    <div class="menu">
+        <a class="active">Admin Dashboard</a>
+        <a href="view-users.html">View Users</a>
+        <a href="admin-account-details.html">Account Details</a>
+        <a href="admin-transactions.html">Transaction History</a>
+        <a href="javascript:void(0)" id="logoutBtn">LogOut</a>
+    </div>
+</div>
+
+<!-- ===== BODY ===== -->
+<div class="dashboard-container">
+
+    <div class="welcome-strip">
+        <h2>Welcome Admin</h2>
+        <p>You have administrative privileges</p>
+    </div>
+
+    <div class="account-card">
+        <h3>Admin Controls</h3>
+
+        <div class="info-row">
+            <span>Total Users</span>
+            <strong>—</strong>
+        </div>
+
+        <div class="info-row">
+            <span>Account Monitoring</span>
+            <strong>Active</strong>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+</div>
+
+</body>
+</html>

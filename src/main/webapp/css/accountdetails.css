@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 8px 15px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0066cc;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details table th, .details table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.details table th {
+    background-color: #004080;
+    color: #fff;
+}

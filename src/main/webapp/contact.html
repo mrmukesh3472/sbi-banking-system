@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/common.js" defer></script>
+    
+</head>
+<body class="contact-bg">
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="images/sbi-logo.png" alt="SBI Logo">
+            <span>State Bank Of India</span>
+        </div>
+        
+        <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu" id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="login.html">LogIn</a>
+            <a href="signup.html">SignUp</a>
+            <a class="active" href="contact.html">ContactUs</a>
+        </div>
+    </div>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <div class="contact-info">
+
+        <div class="info-card">
+            <img src="images/location.png" alt="">
+            <h3>OUR MAIN OFFICE</h3>
+            <p>
+                Customer Service Department,<br>
+                State Bank Bhavan, 16th Floor<br>
+                Madam Cama Road,<br>
+                Mumbai 400 021<br>
+                Contact No: 022 22741216
+            </p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/phone.png" alt="">
+            <h3>PHONE NUMBER</h3>
+            <p>
+                1800-1234 / 1800-2100<br>
+                1800-425-3800 / 1800-11-2211
+            </p>
+        </div>
+
+        <div class="info-card">
+            <img src="images/email.png" alt="">
+            <h3>EMAIL</h3>
+            <p>
+                gm.customer@sbi.co.in
+            </p>
+        </div>
+
+    </div>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <div class="contact-form-section">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form" action="contact" method="post">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter a valid email address">
+            <textarea placeholder="Enter your message"></textarea><br>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+    </div>
+
+</body>
+</html>

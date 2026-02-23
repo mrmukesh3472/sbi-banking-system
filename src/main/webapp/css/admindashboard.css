@@ -1,0 +1,70 @@
+
+/* ===== FOOTER (FIXED BOTTOM BY FLEX) ===== */
+.footer {
+    background: #0b0b0b;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.account-card{
+	margin-top: 168px;
+}
+
+/* =========================
+   HAMBURGER MENU - COMMON
+========================= */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* MENU DEFAULT */
+.menu {
+    display: flex;
+    gap: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0a3dbb;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}

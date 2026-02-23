@@ -1,0 +1,142 @@
+/* ===== VIEW USERS FIX ===== */
+
+/* account-card already center me hota hai */
+.table-card {
+    width: 90%;
+    max-width: 1100px;
+    margin: 140px auto 80px auto;
+    padding: 20px;
+    overflow-x: auto;   /* 🔥 MAIN FIX */
+}
+
+/* table ko flexible banao */
+.user-table {
+    width: 100%;
+    min-width: 900px;   /* content ke hisaab se */
+    border-collapse: collapse;
+}
+
+/* cells */
+.user-table th,
+.user-table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+}
+
+/* header */
+.user-table th {
+    background-color: #0b3ea8;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* hover */
+.user-table tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* last column fix */
+.user-table th:last-child,
+.user-table td:last-child {
+    white-space: nowrap;
+}
+
+/* status */
+.active {
+    color: green;
+    font-weight: bold;
+}
+
+.blocked {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.block-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.unblock-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.block-btn:hover,
+.unblock-btn:hover {
+    opacity: 0.85;
+}
+
+
+
+
+/* =========================
+   HAMBURGER MENU - COMMON
+========================= */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* MENU DEFAULT */
+.menu {
+    display: flex;
+    gap: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0a3dbb;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}

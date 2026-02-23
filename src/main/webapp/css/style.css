@@ -1,0 +1,1119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* ===== TOP BAR ===== */
+.top-bar {
+    background-color: #0a35c7;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.logo-area img {
+    width: 38px;
+}
+
+/* ===== MENU ===== */
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    padding: 4px 10px;
+}
+
+/* ===============================
+   NAVBAR ACTIVE FIX (CONTACT)
+   =============================== */
+.menu a.active {
+    color: yellow;
+    border-bottom: 2px solid #ffdd57;
+}
+
+
+
+.menu a:hover {
+    color: #000000;
+    border-bottom: 2px solid #ffdd57;
+}
+
+/* .menu a.active {
+    background-color: #3b4fa6;
+    border-radius: 4px;
+} */
+
+/* ===== MAIN SECTION ===== */
+.main-section {
+    min-height: calc(100vh - 100px);
+    /* background:url("../images/index-bg.jpg") no-repeat center; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+/* ===== ABOUT BOX ===== */
+.about-box {
+	margin-top:50px;
+    width: 55%;
+    /* color: #002b5c; */
+}
+
+.about-box h2 {
+    color: white;
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    
+}
+
+/* ===== CARD ===== */
+.card-box {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-box img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.card-box h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* Add By Me */
+
+/* .sbi-info{
+    background-color: white;
+} */
+
+
+/* ===== LOGIN PAGE ===== */
+.login-section {
+    min-height: calc(100vh - 100px);
+    background: url("../images/login-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 380px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #0a35c7;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-box input,
+.login-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #082c9e;
+}
+
+/* ===== SIGNUP PAGE ===== */
+.signup-section {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.signup-box {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.signup-box h2 {
+    text-align: center;
+    color: #0a35c7;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.signup-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.signup-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-box button:hover {
+    background-color: #082c9e;
+}
+
+
+/* ===== CONTACT PAGE ===== */
+/* ===============================
+   CONTACT US PAGE BACKGROUND
+   =============================== */
+body.contact-bg {
+    min-height: 100vh;
+    background: url("../images/contact-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* ===============================
+   CONTACT INFO CARDS
+   =============================== */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px 30px;
+    background: transparent; /* IMPORTANT */
+}
+
+.info-card {
+    background-color: #ffffff;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 100px;
+}
+
+.info-card img {
+    width: 42px;
+    margin-bottom: 12px;
+}
+
+.info-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-card p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   CONTACT FORM BOX
+   =============================== */
+.contact-form-section {
+    width: 60%;
+    margin: 30px auto 60px;
+    background-color: #87d6f8;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form-section h2 {
+    margin-bottom: 25px;
+    color: #0a35c7;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+/* For Background Setup */
+
+/* ===== HOME PAGE ===== */
+.home-page {
+    background-image: url("../images/index-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===== LOGIN PAGE BACKGROUND ===== */
+.login-page {
+    background-image: url("../images/login-bg1.jpg");
+    background-size: cover;
+}
+
+/* ===== SIGNUP PAGE BACKGROUND ===== */
+.signup-page {
+    background-image: url("../images/signup-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ===== Welcome Page ===== */
+.top-bar {
+    background-color: #0a35c7;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 240px;
+    white-space: nowrap;
+}
+
+.logo-area img {
+    width: 40px;
+    height: auto;
+}
+
+.logo-area span {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 0;
+    position: relative;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #ffdd57;
+}
+
+.menu a.active {
+    color: #ffeb3b;
+    border-bottom: 2px solid #ffdd57;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    transition: 0.3s;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+
+.dashboard-page {
+    /* background-color: #ffffff; */
+    background: url(../images/dashboard-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dashboard-section {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-box {
+    background-color: #ffffff;
+    padding: 35px 60px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    margin-top: 190px;
+}
+
+.welcome-box h2 {
+    color: #0a35c7;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #1b1f24;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 13px;
+    margin-top: 67px;
+}
+
+
+/* ===== NEW ACCOUNT PAGE ===== */
+.newaccount-page {
+    background: url("../images/account-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* space due to fixed navbar */
+.newaccount-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.newaccount-box {
+    width: 420px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px 35px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin-top: 100px;
+}
+
+.newaccount-box h2 {
+    text-align: center;
+    color: #0a35c7;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.newaccount-box label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.newaccount-box input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.row div {
+    width: 50%;
+}
+
+.gender {
+    margin: 10px 0 18px;
+    font-size: 14px;
+}
+
+.newaccount-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.newaccount-box button:hover {
+    background-color: #082c9e;
+}
+
+
+/* ===== TRANSFER PAGE ===== */
+.transfer-page {
+    background: url("../images/transfer-bg.png") no-repeat center;
+    background-size: cover;
+}
+
+/* spacing due to fixed navbar */
+.transfer-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.transfer-box {
+    width: 360px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    margin-top: 150px;
+}
+
+.transfer-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.transfer-box input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.transfer-box button {
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.transfer-box button:hover {
+    background-color: #082c9e;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+
+/* ===== DEBIT PAGE ===== */
+.debit-page {
+    background: url("../images/debit-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* spacing for fixed navbar */
+.debit-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.debit-box {
+    width: 360px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.debit-box h2 {
+    color: #0a35c7;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.debit-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.debit-box input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.debit-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.debit-box button:hover {
+    background-color: #082c9e;
+}
+
+
+/* ===== CREDIT PAGE ===== */
+.credit-page {
+    background: url("../images/credit-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* spacing for fixed navbar */
+.credit-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.credit-box {
+    width: 360px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.credit-box h2 {
+    color: #0a35c7;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.credit-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.credit-box input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.credit-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.credit-box button:hover {
+    background-color: #082c9e;
+}
+
+/* ===== CHECK BALANCE PAGE (SAME AS CREDIT) ===== */
+.check-balance-page {
+    background: url("../images/balance-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* ===== CHANGE PASSWORD PAGE ===== */
+.change-password-page {
+    background: url("../images/password-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+/* ===== TRANSACTION HISTORY PAGE ===== */
+.transaction-page {
+    background: url("../images/history-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.history-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.history-box {
+    background: #ffffff;
+    width: 80%;
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 200px;
+}
+
+.history-box h2 {
+    text-align: center;
+    color: #0033cc;
+    margin-bottom: 20px;
+}
+
+.history-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-box th {
+    background: #0033cc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.history-box td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-box tr:hover {
+    background: #f2f6ff;
+}
+
+.credit {
+    color: green;
+    font-weight: bold;
+}
+
+.debit {
+    color: red;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 140px;
+}
+
+
+/* ===== ACCOUNT DETAILS PAGE ===== */
+.accountdetails-page {
+    background: url("../images/account-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* spacing due to fixed navbar */
+.accountdetails-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+/* search box */
+.accountdetails-box {
+    width: 420px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.accountdetails-box h2 {
+    text-align: center;
+    color: #0a35c7;
+    margin-bottom: 20px;
+}
+
+.accountdetails-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.accountdetails-box input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.accountdetails-box button {
+    width: 100%;
+    background-color: #0a35c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.accountdetails-box button:hover {
+    background-color: #082c9e;
+}
+
+/* details table */
+.accountinfo-box {
+    width: 65%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.accountinfo-box h3 {
+    text-align: center;
+    color: #0033cc;
+    margin-bottom: 15px;
+}
+
+.accountinfo-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.accountinfo-box th {
+    background: #0033cc;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 40%;
+}
+
+.accountinfo-box td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.footer{
+	margin-top: 200px;
+}
+
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+/* =========================
+   HAMBURGER MENU - COMMON
+========================= */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* MENU DEFAULT */
+.menu {
+    display: flex;
+    gap: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #0a3dbb;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 15px 0;
+        z-index: 999;
+    }
+
+    .menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+
+/* Transaction Colors */
+.credit {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.debit {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.transfer-credit {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.transfer-debit {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.history-table tr {
+    transition: 0.3s;
+}
+
+
+/* ===== DASHBOARD ===== */
+
+.dashboard-container {
+    overflow: visible;   /* 👈 sticky fix */
+}
+
+.dashboard-page {
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* BLUE STRIP */
+/* ===== WELCOME STRIP (GLASS + STICKY) ===== */
+.welcome-strip {
+    position: sticky;
+    top: 70px;
+    z-index: 900;
+
+    padding: 10px 22px;
+    background: rgba(0, 48, 135, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    color: white;
+}
+
+
+
+
+/* Heading */
+.welcome-strip h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.welcome-strip h2 span {
+    color: #ffd700; /* Golden highlight */
+}
+
+.welcome-strip p {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ===== SCROLL SHADOW EFFECT ===== */
+
+/*.welcome-strip.scrolled {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    transform: translateY(-1px);
+}*/
+
+.welcome-strip.scrolled {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+
+/* ACCOUNT CARD CENTER */
+.account-card {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-top: 50px;
+}
+
+.account-card h3 {
+    text-align: center;
+    color: #003087;
+    border-bottom: 2px solid #003087;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ROWS */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: #f9fafc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.info-row span {
+    font-size: 20px;
+    color: #444;
+}
+
+.info-row strong {
+    font-size: 20px;
+}
+
+/* BALANCE */
+.info-row.balance {
+    background: linear-gradient(135deg, #e6fff2, #ccffe6);
+    border-left: 5px solid #28a745;
+}
+
+.info-row.balance strong {
+    color: #28a745;
+    font-size: 17px;
+}
+
+
+#accountMsg{
+	margin-top: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/common.js" defer></script>
+    
+    <!-- SweetAlert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+	<!-- Logout Confirmation -->
+	<script src="js/logout-confirm.js"></script>
+	
+	<!-- welcome-scroll -->
+	<script src="js/welcome-scroll.js"></script>
+	
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+
+        <!-- LOGO -->
+        <div class="logo-area">
+            <img src="images/sbi-logo.png" alt="SBI Logo">
+            <span>State Bank Of India</span>
+        </div>
+
+        <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="menu" id="navMenu">
+            <a class="active" href="dashboard.html">Home</a>
+            <a href="newaccount.html">NewAccount</a>
+            <a href="accountdetails.html">Account Details</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="debit.html">Debit</a>
+            <a href="credit.html">Credit</a>
+            <a href="balance.html">Check Balance</a>
+            <a href="history.html">Transaction History</a>
+            <a href="changepassword.html">Change Password</a>
+            <a href="javascript:void(0)" id="logoutBtn">LogOut</a>
+        </div>
+
+    </div>
+
+    <!-- ===== DASHBOARD BODY ===== -->
+	<div class="dashboard-container">
+	
+	    <!-- BLUE STRIP -->
+	    <div class="welcome-strip">
+	        <h2>Welcome, <span id="userName">User</span></h2>
+	        <p>Please select an option from the menu above to continue your banking services.</p>
+	    </div>
+	    
+	    <p id="accountMsg" style="margin-bottom:12px;font-weight:600;"></p>
+	
+	    <!-- ACCOUNT OVERVIEW -->
+	    <div class="account-card">
+	    
+	        <h3>Account Overview</h3>
+	
+	        <div class="info-row">
+	            <span>Account Holder</span>
+	            <strong id="accHolder">-</strong>
+	        </div>
+	
+	        <div class="info-row">
+	            <span>Account Number</span>
+	            <strong id="accNo">-</strong>
+	        </div>
+	
+	        <div class="info-row">
+	            <span>Account Type</span>
+	            <strong id="accType">-</strong>
+	        </div>
+	
+	        <div class="info-row">
+	            <span>Father's Name</span>
+	            <strong id="fatherName">-</strong>
+	        </div>
+	
+	        <div class="info-row balance">
+	            <span>Available Balance</span>
+	            <strong>₹ <span id="balance">0</span></strong>
+	        </div>
+	
+	    </div>
+	</div>
+
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+    </div>
+
+	<script src="js/dashboard.js"></script>
+</body>
+</html>

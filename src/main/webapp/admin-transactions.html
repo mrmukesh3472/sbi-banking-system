@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI – All Transactions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewusers.css">
+
+    <script src="js/admin-transactions.js" defer></script>
+    
+    <!-- COMMON JS -->
+    <script defer src="js/admin-common.js"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Logout Confirmation -->
+	<script src="js/logout-confirm.js"></script>
+</head>
+
+<body class="dashboard-page">
+
+<div class="top-bar">
+    <div class="logo-area">
+        <img src="images/sbi-logo.png">
+        <span>State Bank Of India</span>
+    </div>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu">
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="view-users.html">View Users</a>
+        <a href="admin-account-details.html">Account Details</a>
+        <a class="active">Transaction History</a>
+        <a href="javascript:void(0)" id="logoutBtn">LogOut</a>
+    </div>
+</div>
+
+<div class="dashboard-container">
+    <div class="welcome-strip">
+        <h2>All Transactions</h2>
+        <p>Debit, Credit & Transfers</p>
+    </div>
+
+    <div class="account-card table-card">
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>User</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Account</th>
+                    <th>Related Acc</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody id="txnTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI Admin - View Users</title>
+    
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewusers.css">
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/view-users.js" defer></script>
+    
+    <!-- COMMON JS -->
+    <script defer src="js/admin-common.js"></script>
+    
+    <!-- Logout Confirmation -->
+	<script src="js/logout-confirm.js"></script>
+</head>
+
+<body class="dashboard-page">
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+    <div class="logo-area">
+        <img src="images/sbi-logo.png">
+        <span>State Bank Of India</span>
+    </div>
+    
+    <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    <div class="menu">
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a class="active">View Users</a>
+        <a href="admin-account-details.html">Account Details</a>
+        <a href="admin-transactions.html">Transaction History</a>
+        <a href="javascript:void(0)" id="logoutBtn">LogOut</a>
+    </div>
+</div>
+
+<!-- ===== BODY ===== -->
+<div class="dashboard-container">
+
+    <div class="welcome-strip">
+        <h2>All Registered Users</h2>
+        <p>Manage user accounts and monitoring</p>
+    </div>
+
+    <div class="account-card table-card">
+
+        <h3>User List</h3>
+
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Action</th> <!-- 🔥 IMPORTANT -->
+                </tr>
+            </thead>
+
+            <tbody id="userTableBody">
+                <!-- JS will inject rows -->
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+</div>
+
+</body>
+</html>

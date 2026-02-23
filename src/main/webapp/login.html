@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="js/common.js" defer></script>
+	
+    <!-- Login JS -->
+    <script src="js/login.js"></script>
+   
+</head>
+<body class="login-page">
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="images/sbi-logo.png" alt="SBI Logo">
+            <span>State Bank Of India</span>
+        </div>
+        
+        <!-- HAMBURGER (ONLY FOR MOBILE) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu" id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a class="active" href="login.html">LogIn</a>
+            <a href="signup.html">SignUp</a>
+            <a href="contact.html">ContactUs</a>
+        </div>
+    </div>
+
+    <!-- ===== LOGIN SECTION ===== -->
+    <div class="login-section">
+        <div class="login-box">
+            <h2>LOGIN</h2>
+
+            <form action="login" method="post">
+                <label>USER TYPE</label>
+                <select name="userType" required>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+
+                <label>USERNAME</label>
+                <input type="text" name="username" placeholder="Enter Username" required>
+
+                <label>PASSWORD</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
+
+                <button type="submit">LogIn</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+    </div>
+    
+    
+    <script>
+	    const params = new URLSearchParams(window.location.search);
+	
+	    if (params.get("blocked")) {
+	        Swal.fire("Access Denied", "You are blocked by Admin", "error");
+	    }
+	
+	    if (params.get("status") === "invalid") {
+	        Swal.fire("Login Failed", "Invalid Credentials", "error");
+	    }
+	
+	    if (params.get("status") === "unauthorized") {
+	        Swal.fire("Access Denied", "You are not authorized as Admin", "error");
+	    }
+	</script>
+
+</body>
+</html>

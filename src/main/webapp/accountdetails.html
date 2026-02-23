@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBI - Account Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- COMMON JS -->
+    <script defer src="js/common.js"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JS -->
+    <script defer src="js/accountdetails.js"></script>
+    
+    <!-- Logout Confirmation -->
+	<script src="js/logout-confirm.js"></script>
+</head>
+
+<body class="accountdetails-page">
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+
+    <div class="logo-area">
+        <img src="images/sbi-logo.png" alt="SBI Logo">
+        <span>State Bank Of India</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu" id="navMenu">
+        <a href="dashboard.html">Home</a>
+        <a href="newaccount.html">NewAccount</a>
+        <a class="active" href="accountdetails.html">Account Details</a>
+        <a href="transfer.html">Transfer</a>
+        <a href="debit.html">Debit</a>
+        <a href="credit.html">Credit</a>
+        <a href="balance.html">Check Balance</a>
+        <a href="history.html">Transaction History</a>
+        <a href="changepassword.html">Change Password</a>
+        <a href="javascript:void(0)" id="logoutBtn">LogOut</a>
+    </div>
+</div>
+
+<!-- ===== ACCOUNT DETAILS SECTION ===== -->
+<div class="accountdetails-section">
+
+    <!-- SEARCH BOX -->
+    <div class="accountdetails-box">
+        <h2>Account Details</h2>
+
+        <form id="accountForm">
+            <label>Account Number</label>
+            <input type="number" id="accNoInput"
+                   placeholder="Enter Account Number" required>
+
+            <button type="submit">View Details</button>
+        </form>
+    </div>
+
+    <!-- DETAILS TABLE -->
+    <div class="accountinfo-box" id="infoBox" style="display:none;">
+        <h3>Account Information</h3>
+
+        <table>
+            <tr>
+                <th>Account Number</th>
+                <td id="dAccNo"></td>
+            </tr>
+            <tr>
+                <th>Account Holder Name</th>
+                <td id="username"></td>
+            </tr>
+            <tr>
+                <th>Father Name</th>
+                <td id="father"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td id="email"></td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td id="mobile"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td id="gender"></td>
+            </tr>
+            <tr>
+                <th>Account Type</th>
+                <td id="type"></td>
+            </tr>
+            <tr>
+                <th>Balance</th>
+                <td id="balance"></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+    © 2026 State Bank of India. All rights reserved. | Made By Mukesh Rauniyar
+</div>
+
+<!-- ===== HAMBURGER SCRIPT ===== -->
+
+</body>
+</html>
