@@ -102,14 +102,19 @@ http://localhost:8080/SBI-Banking-System/
 
 ## 📸 Screenshots
 
-### 🔹 Login Page
+### 🔹 Landing Page
 ![Landing Page](screenshots/index.png)
 
-### 🔹 Dashboard
+### 🔹 User Login
 ![User Login](screenshots/login.png)
 
-### 🔹 View Users
+### 🔹 User Dashboard
 ![User Dashboard](screenshots/userdDashboard.png)
+
+### 🔹 View Users
+![Admin Dashboard](screenshots/adminDashboard.png)
+
+
 
 
 🎯 Learning Outcomes
