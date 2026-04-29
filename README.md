@@ -1,114 +1,147 @@
-🏦 SBI Banking System
+# 🏦 SBI Banking System
 
-The SBI Banking System is a full-stack web-based banking application developed using Java Servlet technology. This project simulates core banking operations such as account management, transactions, and secure authentication.
+A full-stack web-based banking application developed using **Java Servlets, JSP, MySQL, and Apache Tomcat**.  
+This project simulates real-world banking operations like account management, transactions, and authentication.
 
-It is designed as a real-world banking prototype following MVC architecture and deployed using Apache Tomcat with MySQL as the database.
+---
 
-🚀 Tech Stack
+## 📌 Overview
 
-💻 Frontend: HTML, CSS, JavaScript
+The **SBI Banking System** is designed as a real-world banking prototype using **MVC architecture**.  
+It allows users to perform secure banking operations such as account creation, money transfer, and transaction tracking.
 
-⚙ Backend: Java Servlets (Jakarta EE)
+---
 
-🗄 Database: MySQL
+## 🚀 Tech Stack
 
-🌐 Server: Apache Tomcat
+- 💻 Frontend: HTML, CSS, JavaScript
+- ⚙️ Backend: Java Servlets (Jakarta EE)
+- 🗄️ Database: MySQL
+- 🌐 Server: Apache Tomcat
+- 🧩 Architecture: MVC (Model-View-Controller)
 
-🛠 Build Tool: Maven (if applicable)
+---
 
-☁ Deployment: Railway
+## 🔐 Key Features
 
-🔐 Features
+### 👤 User Features
+- User Registration & Login
+- Create Bank Account
+- Check Balance
+- Deposit Money
+- Withdraw Money
+- Fund Transfer
+- Transaction History
+- Session Management
 
-User Registration & Login Authentication
+### 🛠️ Admin Features
+- View All Users
+- Monitor Accounts
+- Block / Unblock Users
 
-Create New Bank Account
+---
 
-Deposit & Withdraw Money
+## 🏗️ Project Architecture
 
-Fund Transfer Between Accounts
+src/
+└── main/
+├── java/
+│ └── controllers/ (Servlets)
+└── webapp/
+├── html files
+├── css/
+├── js/
+└── images/
 
-View Account Details
 
-Transaction History
+### Layers:
 
-Session Management
+- **Presentation Layer** → HTML, CSS, JS
+- **Controller Layer** → Servlets
+- **Business Logic** → Java Classes
+- **Database Layer** → MySQL (JDBC)
 
-Secure JDBC Database Connectivity
+---
 
-🏗 Project Architecture
+## 🗄️ Database Design
 
-The project follows MVC-based layered architecture:
+- `users` → user credentials
+- `accounts` → account details
+- `transactions` → transaction records
 
-Presentation Layer (HTML/CSS/JS)
+---
 
-Controller Layer (Servlets)
+## ⚙️ Setup Instructions (Run Locally)
 
-Business Logic Layer (Java Classes)
+### 1️⃣ Clone Repository
 
-Database Layer (MySQL + JDBC)
+```bash
+- git clone https://github.com/YOUR_USERNAME/sbi-banking-system.git
 
-🗄 Database Design
+### 2️⃣ Import Project
+Open Eclipse / IntelliJ
+Import as Dynamic Web Project
 
-Customers Table
+3️⃣ Configure Database
+Create MySQL database:
 
-Accounts Table
+- CREATE DATABASE sbi_bank;
 
-Transactions Table
+### Update credentials in DBConnection.java:
 
-Admin Table (if implemented)
+String url = "jdbc:mysql://localhost:3306/sbi_bank";
+String user = "your_username";
+String password = "your_password";
 
-🔧 How to Run Locally
+### 4️⃣ Run on Server
+Add project to Apache Tomcat 10
+Start server
 
-Clone the repository
+### 🌐 Access Application
+http://localhost:8080/SBI-Banking-System/
 
-Import into Eclipse / IntelliJ
+## 📸 Screenshots
 
-Configure MySQL database
+### 🔹 Login Page
+![Landing Page](screenshots/index.png)
 
-Update DB credentials in connection class
+### 🔹 Dashboard
+![User Login](screenshots/login.png)
 
-Deploy on Apache Tomcat
+### 🔹 View Users
+![User Dashboard](screenshots/userdDashboard.png)
 
-Run on:
 
-http://localhost:8080/
-🌍 Live Deployment
+🎯 Learning Outcomes
+- Java Servlet Lifecycle
+- JDBC with MySQL
+- Session Management
+- MVC Architecture
+- Web Deployment using Tomcat
 
-Deployed on:
-Railway
-
-(Deployment link here)
-
-🎯 Learning Objectives
-
-Understanding Java Servlet lifecycle
-
-JDBC connectivity with MySQL
-
-Session management & authentication
-
-Web deployment using Tomcat
-
-Cloud deployment using Railway
-
-Migration from Oracle DB to MySQL
+🔒 Security Note
+⚠️ Important:
+Database credentials are not included for security reasons.
+Configure your own credentials before running.
 
 📌 Future Enhancements
+- Admin Dashboard Improvements
+- Email Notifications
+- OTP Authentication
+- REST API Integration
+- Spring Boot Migration
+- JWT Authentication
 
-Admin dashboard
-
-Email notifications
-
-OTP verification
-
-REST API integration
-
-Spring Boot migration
-
-JWT Authentication
 
 👨‍💻 Author
 
 Mukesh Rauniyar
 Java Full Stack Developer
+
+
+⭐ Support
+
+If you like this project:
+👉 Star this repository
+👉 Share with others
+👉 Fork and improve
