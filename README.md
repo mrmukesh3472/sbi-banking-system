@@ -109,7 +109,7 @@ http://localhost:8080/SBI-Banking-System/
 ![User Login](screenshots/login.png)
 
 ### 🔹 User Dashboard
-![User Dashboard](screenshots/userdDashboard.png)
+![User Dashboard](screenshots/userDashboard.png)
 
 ### 🔹 View Users
 ![Admin Dashboard](screenshots/adminDashboard.png)
